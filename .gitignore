@@ -1,0 +1,21 @@
+# Local environments and editor settings
+.venv/
+venv/
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded datasets and generated splits
+archive/Sarcasm_Headlines_Dataset*.json
+archive/data/
+
+# Local credentials and operating system files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store

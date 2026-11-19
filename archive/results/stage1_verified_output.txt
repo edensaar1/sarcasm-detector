@@ -1,0 +1,53 @@
+Training vocabulary: 23,899 words
+Validation accuracy: 85.12%
+
+Most associated with sarcasm
+Word                  Log ratio Training headlines
+fucking                 +4.4357                 81
+shit                    +4.2364                 67
+clearly                 +3.9871                 52
+fuck                    +3.9681                 48
+area                    +3.9214                402
+coworker                +3.8455                 45
+onion                   +3.7545                 41
+realizes                +3.5722                 34
+wondering               +3.5432                 33
+kavanaugh               +3.5134                 32
+unable                  +3.5134                 32
+archives                +3.3491                 27
+currently               +3.3491                 27
+allows                  +3.3127                 26
+asshole                 +3.2750                 24
+
+Most associated with non-sarcasm
+Word                  Log ratio Training headlines
+huffpost                -3.8952                 49
+trans                   -3.7673                 43
+jenner                  -3.7208                 39
+kardashian              -3.5667                 35
+colbert                 -3.5385                 34
+lgbtq                   -3.3843                 29
+2015                    -3.1612                 48
+noah                    -3.1612                 23
+queer                   -3.1612                 46
+trevor                  -3.1612                 23
+hawaii                  -3.1186                 22
+donald                  -3.1077                378
+lgbt                    -3.0742                 44
+corden                  -3.0277                 20
+transgender             -2.9536                 39
+
+Validation threshold comparison (false positive = 3, false negative = 1)
+Confusion matrix format: [[TN, FP], [FN, TP]]
+Rule           Threshold                 Accuracy Precision    Recall           Confusion matrix Total cost
+Default        0.5                         85.12%    85.13%    83.25% [[1298, 197], [227, 1128]]        818
+Theoretical    0.75                        83.09%    91.22%    71.29%   [[1402, 93], [389, 966]]        668
+Empirical      0.8306967662537762          81.33%    93.27%    65.46%   [[1431, 64], [468, 887]]        660
+
+Learning curve
+ Training size  Validation accuracy
+           500               72.95%
+         1,000               76.91%
+         2,000               78.53%
+         5,000               81.40%
+        22,803               85.12%
